@@ -22,12 +22,12 @@ class GUI:
         self.screen = pygame.display.set_mode([self.width, self.height])
         pygame.display.set_caption(config.game_name)
 
-        self.font = pygame.font.Font('PressStart2P-vaV7.ttf', 20)
-        self.bg_image = pygame.image.load('background.jpeg').convert()
+        self.font = pygame.font.Font('resources/PressStart2P-vaV7.ttf', 20)
+        self.bg_image = pygame.image.load('resources/background.jpeg').convert()
         self.bg_image = pygame.transform.scale(self.bg_image, (self.width, self.height))
-        self.ship_icon = pygame.image.load('spaceship.png').convert_alpha()
-        self.ast_sm_icon = pygame.image.load('asteroid-small.png').convert_alpha()
-        self.ast_lg_icon = pygame.image.load('asteroid-large.png').convert_alpha()
+        self.ship_icon = pygame.image.load('resources/spaceship.png').convert_alpha()
+        self.ast_sm_icon = pygame.image.load('resources/asteroid-small.png').convert_alpha()
+        self.ast_lg_icon = pygame.image.load('resources/asteroid-large.png').convert_alpha()
 
         self.set_background("-", "-")
         pygame.display.update()
